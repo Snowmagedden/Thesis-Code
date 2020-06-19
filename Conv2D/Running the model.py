@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[6]:
-
 
 import numpy as np
 from keras.preprocessing import image
