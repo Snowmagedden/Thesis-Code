@@ -11,7 +11,6 @@ from keras.utils import np_utils
 import matplotlib.pyplot as plt
 
 
-
 #creating and cleaning the engagement data
 engagement = pd.read_csv("all_engagement_data.csv")
 engagement.drop([210,211,212,213,214,215],axis=0,inplace=True)
