@@ -10,20 +10,15 @@ from tqdm import tqdm
 import cv2
 
 
-# In[ ]:
-
-
 #Creating a list of videos
 list_of_files = []
 for filename in os.listdir('videos'):
     list_of_files.append(filename)
 
+    
 #Creating a dataframe out of the list
 df = pd.DataFrame(list_of_files)
 df.columns = ['video name']
-
-
-# In[ ]:
 
 
 # @Kang&Atul

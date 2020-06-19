@@ -16,13 +16,7 @@ from keras.layers import Conv2D, MaxPooling2D, GlobalMaxPooling2D
 import pandas as pd
 
 
-# In[7]:
-
-
 final = pd.read_csv('final.csv')
-
-
-# In[9]:
 
 
 # creating an empty list of image arrays of the image frames
@@ -40,15 +34,10 @@ for i in tqdm(range(final.shape[0])):
     image_array.append(img)
 
 
-# In[12]:
-
-
 # converting the list to numpy array and splitting into X_train and X_test
 X_train = np.array(image_array[0:6576])
 X_test = np.array(image_array[6576:8880])
 
-
-# In[15]:
 
 
 y = final['engagement rating']
@@ -57,22 +46,13 @@ y = np.array(y)
 y-= 1                     #We need -1 because python starts at 0
 
 
-# In[16]:
-
-
 #splitting the y_train and y_test
 y_train = y[0:6576]
 y_test = y[6576:8880]
 
 
-# In[17]:
-
-
 #Assigning ResNet50 to a variable 
 base_model = ResNet50(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
-
-
-# In[ ]:
 
 
 #Extracting features from the images using ResNet
@@ -81,16 +61,10 @@ X_train = base_model.predict(X_train)
 X_test = base_model.predict(X_test)
 
 
-# In[ ]:
-
-
 # normalizing the pixel values
 max = X_train.max()
 X_train = X_train/max
 X_test = X_test/max
-
-
-# In[ ]:
 
 
 #Building the model
@@ -119,21 +93,12 @@ def build_model():
     return model
 
 
-# In[ ]:
-
-
 model = build_model()
 mcp_save = ModelCheckpoint('weight.hdf5', save_best_only=True, monitor='val_loss', mode='min')
 model.compile(loss='sparse_categorical_crossentropy',optimizer=tf.keras.optimizers.Adadelta(lr=0.002),metrics=['accuracy'])
 
 
-# In[ ]:
-
-
 history = model.fit(X_train, y_train, epochs=10, validation_data=(X_test, y_test), batch_size=128)
-
-
-# In[ ]:
 
 
 history_dict = history.history
@@ -148,4 +113,3 @@ plt.xlabel('Epochs')
 plt.ylabel('Accuracy') 
 plt.legend()
 plt.show()
-
