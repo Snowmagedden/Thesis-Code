@@ -10,6 +10,10 @@ The purpose of this study was the use of deep learning models to predict total e
 ## Conv2D
 To prepare the data for the Conv2D model some excel and notepad needs to be used to clean the final dataframe and merge with results. In addition it is also used to manually split the train and test set.
 
+Example image of final dataframe
+
+![image](https://user-images.githubusercontent.com/66143690/93349853-4a804a00-f838-11ea-913f-69661623ce9c.png)
+
 ### Conv2D model
 
 ![image](https://user-images.githubusercontent.com/66143690/93347247-240cdf80-f835-11ea-9a1f-d60f2db162ef.png)
