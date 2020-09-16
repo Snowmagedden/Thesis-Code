@@ -8,4 +8,4 @@ https://github.com/harvitronix/five-video-classification-methods
 For the Conv2D model some excel and notepad needs to be used to clean the final dataframe and merge with results. In addition it is also used to manually split the train and test set and 
 
 ## LSTM
-For the LSTM model create three folders "train", "test" and "sequences". In addition the videos should in the same folder as the .py files and not in a subfolder.
+For the LSTM model create three folders "train", "test" and "sequences". In addition the videos should be in the same folder as the .py files and not in a subfolder.
