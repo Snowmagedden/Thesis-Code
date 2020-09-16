@@ -27,6 +27,11 @@ For the LSTM model create three folders "train", "test" and "sequences". In addi
 ![image](https://user-images.githubusercontent.com/66143690/93347563-849c1c80-f835-11ea-9b45-7581cbc8db51.png)
 
 ### Results
+LeakyRelu activation 
+
+![image](https://user-images.githubusercontent.com/66143690/93349310-9c74a000-f837-11ea-9352-c9b276e3279d.png)![image](https://user-images.githubusercontent.com/66143690/93349456-cb8b1180-f837-11ea-9590-076d2f77b612.png)
+
+Relu activation
 
 ![image](https://user-images.githubusercontent.com/66143690/93349021-430c7100-f837-11ea-93de-43e7531728e3.png)![image](https://user-images.githubusercontent.com/66143690/93349057-4b64ac00-f837-11ea-86a3-c2117f97404e.png)
 
