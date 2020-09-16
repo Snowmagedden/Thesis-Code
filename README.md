@@ -15,7 +15,7 @@ To prepare the data for the Conv2D model some excel and notepad needs to be used
 ![image](https://user-images.githubusercontent.com/66143690/93347247-240cdf80-f835-11ea-9a1f-d60f2db162ef.png)
 
 ### Results
-![image](https://user-images.githubusercontent.com/66143690/93347656-9d0c3700-f835-11ea-967c-c44a59298673.png)
+![image](https://user-images.githubusercontent.com/66143690/93349230-85ce4900-f837-11ea-8c35-35b8adda27be.png)
 
 As expected the Conv2D model performed very poorly in using static images to predictal engagement score of a child in a video
 
@@ -28,6 +28,7 @@ For the LSTM model create three folders "train", "test" and "sequences". In addi
 
 ### Results
 
-![image](https://user-images.githubusercontent.com/66143690/93347981-f96f5680-f835-11ea-9049-f3ea5a95b074.png)![image](https://user-images.githubusercontent.com/66143690/93348013-012efb00-f836-11ea-89dd-0d95610de009.png)
+![image](https://user-images.githubusercontent.com/66143690/93349021-430c7100-f837-11ea-93de-43e7531728e3.png)![image](https://user-images.githubusercontent.com/66143690/93349057-4b64ac00-f837-11ea-86a3-c2117f97404e.png)
+
 
 The LSTM model performs moderately well in predicting the engagement score of a child in a video
